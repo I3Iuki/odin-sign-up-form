@@ -42,6 +42,7 @@ input, button, textarea {
   flex-direction: column;
   justify-content: space-between;
   width: 37%;
+  padding-bottom: 16px;
   background-image: url(./img/unsplash-leaves.jpg);
   background-size: cover;
   color: whitesmoke;
@@ -74,7 +75,20 @@ input, button, textarea {
 }
 
 
+/* form */
+
+#form-section {
+  width: 63%;
+  padding: 20vh 32px;
+}
+
+#form-section > P {
+  font-size: 1.75em;
+  font-weight: 500;
+  margin-bottom: 6vh;
+}
 
 #form {
-  width: 67%;
+  width: 100%;
+  margin: 0 -32px;
 }
