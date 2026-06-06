@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Norsebold";
+  src: url(./font/Norsebold.otf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all .25s ease-in;
+  outline: 1px solid black;
+}
+
+html {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  
+  display: flex;
+}
+
+input, button, textarea {
+  outline: 1px solid #E5E7EB;
+  font: inherit;
+}
+
+*:focus {
+  outline: blue;
+  box-shadow: 4px 4px 3px 2px;
+}
+
+*:user-invalid {
+  outline: red;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 37%;
+  background-image: url(./img/unsplash-leaves.jpg);
+  background-size: cover;
+  color: whitesmoke;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+  margin-top: 40%;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#logo {
+  width: auto;
+  height: 100%;
+}
+
+#title {
+  font-family: "Norsebold";
+  font-size: 7rem;
+}
+
+#footer {
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+
+#form {
+  width: 67%;
+}
