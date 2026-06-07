@@ -17,9 +17,8 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   line-height: 1.5;
-  
   display: flex;
 }
 
@@ -66,7 +65,7 @@ input, button, textarea {
 
 #title {
   font-family: "Norsebold";
-  font-size: 7rem;
+  font-size: 64px;
 }
 
 #footer {
@@ -74,21 +73,33 @@ input, button, textarea {
   font-weight: lighter;
 }
 
-
 /* form */
 
 #form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6vh;
   width: 63%;
-  padding: 20vh 32px;
+  padding:  32px;
+  background-color: whitesmoke;
 }
 
-#form-section > P {
-  font-size: 1.75em;
+#form-section > p:first-of-type, #form-section > p:first-of-type + p {
+  width: 80%;
+  font-size: 18px;
   font-weight: 500;
-  margin-bottom: 6vh;
+}
+
+#form-section > p:first-of-type + p {
+  margin-bottom: 3vh;
 }
 
 #form {
-  width: 100%;
-  margin: 0 -32px;
+  width: calc(100% + 64px);
+  flex: 1;
+  transform: translateX(-32px);
+  background-color: white;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
 }
+
