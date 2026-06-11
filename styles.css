@@ -84,13 +84,13 @@ input, button, textarea {
   background-color: whitesmoke;
 }
 
-#form-section > p:first-of-type, #form-section > p:first-of-type + p {
+#form-section > p:not(:last-of-type) {
   width: 80%;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
 }
 
-#form-section > p:first-of-type + p {
+#form-section > p + p {
   margin-bottom: 3vh;
 }
 
